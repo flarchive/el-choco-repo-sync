@@ -1,0 +1,20 @@
+.RepoSync {
+  max-width: 1120px;
+  padding-top: 24px;
+  padding-bottom: 48px;
+  .RepoSync-intro { margin-bottom: 24px; }
+  .RepoSync-card { padding: 24px; margin: 18px 0; border: 1px solid var(--control-bg); border-radius: 16px; }
+  .RepoSync-cardHeader { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; h3 { margin: 0; } }
+  .RepoSync-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 20px; }
+  .RepoSync-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .RepoSync-save { position: sticky; bottom: 0; padding: 16px; background: var(--body-bg); border: 1px solid var(--control-bg); border-radius: 12px; z-index: 1; }
+  .RepoSync-marker { display: block; white-space: pre-wrap; padding: 12px; margin: 12px 0 20px; background: var(--control-bg); border-radius: 8px; }
+  .Form-group > .Button { margin-top: 8px; }
+  .Form-group > textarea { margin-top: 10px; }
+  .RepoSync-log, .RepoSync-backups { list-style: none; padding: 0; margin: 0; }
+  .RepoSync-log li { display: grid; gap: 5px; padding: 14px 0; border-top: 1px solid var(--control-bg); overflow-wrap: anywhere; }
+  .RepoSync-log time, .RepoSync-log small { color: var(--muted-color); }
+  .RepoSync-backups { display: flex; flex-wrap: wrap; gap: 8px; }
+  .Alert { margin-bottom: 16px; }
+  @media (max-width: 767px) { .RepoSync-grid { grid-template-columns: 1fr; } .RepoSync-card { padding: 16px; } }
+}
